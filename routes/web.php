@@ -11,13 +11,16 @@ Route::get('/', function () {
 
 return  view('welcome');
 });
-Route::get('/register',[RegisterController::class, 'register']);
+// Route::get('/register',[RegisterController::class, 'register']);
 // laravel new projectname
 // php artisan serve
 Route::get('/section',SectionController::class);
 Route::get('/teacher', [TeacherController::class, 'register']);
 //how to call resource Controller
 Route::resource('/crzy', StudentController::class);
+Route::get('/register',function () {
+    return view('registration');
+});
 // _____________________________________________
 // with controller
 // Route::get('hello/{id}', [RegisterController::class, 'register']);
