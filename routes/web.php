@@ -24,3 +24,6 @@ Route::get('/register',function () {
 // _____________________________________________
 // with controller
 // Route::get('hello/{id}', [RegisterController::class, 'register']);
+Route::get('/controll-statement',function () {
+    return view('controll-statement');
+});
