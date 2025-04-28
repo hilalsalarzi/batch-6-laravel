@@ -7,17 +7,14 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-
-return  view('welcome');
-});
+Route::resource('/', StudentController::class);
 // Route::get('/register',[RegisterController::class, 'register']);
 // laravel new projectname
 // php artisan serve
 Route::get('/section',SectionController::class);
 Route::get('/teacher', [TeacherController::class, 'register']);
 //how to call resource Controller
-Route::resource('/crzy', StudentController::class);
+// Route::resource('/crzy', StudentController::class);
 Route::get('/register',function () {
     return view('registration');
 });
@@ -26,4 +23,8 @@ Route::get('/register',function () {
 // Route::get('hello/{id}', [RegisterController::class, 'register']);
 Route::get('/controll-statement',function () {
     return view('controll-statement');
+});
+
+Route::get('/loop',function () {
+    return view('loop');
 });

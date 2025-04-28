@@ -1,5 +1,6 @@
-<h1> hello world!</h1>
-{{-- ancher tag for resource student controller --}}
-<a href="{{ route('crzy.show',23) }}">show</a>
+<p>{{ $name }}</p> <!-- This will display 'Laravel' -->
 
-{{-- ancher tag for resource teacher controller --}}
+    @foreach ($fruits as $fruit)
+        {{ $fruit }} <!-- This will display each fruit in the array -->
+    @endforeach
+

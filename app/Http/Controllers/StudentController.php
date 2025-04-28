@@ -11,8 +11,13 @@ class StudentController extends Controller
      */
     public function index()
     {
-        return  view('welcome');
+        $name = 'Laravel';
+        $fruits = ['apple', 'banana', 'orange', 'grape'];
+
+        // Pass both name and fruits to the view
+        return view('welcome', compact('name', 'fruits'));
     }
+
 
     /**
      * Show the form for creating a new resource.
