@@ -7,7 +7,14 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::resource('/', StudentController::class);
+
+Route::get('/', function () {
+    return view('front-end.pages.home');
+});
+Route::get('/contact1', function () {
+    return view('front-end.pages.contact1');
+});
+// Route::resource('/', StudentController::class);
 // Route::get('/register',[RegisterController::class, 'register']);
 // laravel new projectname
 // php artisan serve
