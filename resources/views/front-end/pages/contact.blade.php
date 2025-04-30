@@ -53,3 +53,11 @@
        </div>
     </div>
     @endsection
+@push('css')
+    <style>
+
+        /* .card{
+            display: none;
+        } */
+        </style>
+@endpush

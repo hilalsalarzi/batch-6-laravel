@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('front-end.pages.home');
 });
-Route::get('/contact1', function () {
-    return view('front-end.pages.contact1');
+Route::get('/contact', function () {
+    return view('front-end.pages.contact');
 });
 // Route::resource('/', StudentController::class);
 // Route::get('/register',[RegisterController::class, 'register']);

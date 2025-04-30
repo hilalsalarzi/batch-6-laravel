@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link  href="{{ asset('assets/js/bootstrap.js') }}">
+    {{-- we are linking the javascript file --}}
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    {{-- we are linking the javascript file --}}
+    {{-- we are using stack for css and js --}}
+{{-- we are using stack for css and js --}}
+@stack('css')
+{{-- we are using stack for css and js --}}
+{{-- <style>
+    body{
+        background-color: green;
+    }
+</style> --}}
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -21,7 +34,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('/contact1') }}">Contact</a>
+                <a class="nav-link" href="{{ url('/contact') }}">Contact</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

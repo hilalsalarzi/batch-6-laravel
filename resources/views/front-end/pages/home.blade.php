@@ -7,13 +7,13 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{{ asset('images/image1.avif') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('assets/images/image1.avif') }}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="{{ asset('images/image1.avif') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('assets/images/image1.avif') }}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="{{ asset('images/image1.avif') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('assets/images/image1.avif') }}" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -28,23 +28,23 @@
        <div class="row">
         <div class="col-4">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/image1.avif') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('assets/images/image1.avif') }}" class="card-img-top" alt="...">
                 <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-4" >
+            <div class="card" style="width: 18rem;" >
+                <img src="{{ asset('assets/images/image1.avif') }}" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: green">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </div>
         </div>
         <div class="col-4">
             <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/image1.avif') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/image1.avif') }}" class="card-img-top" alt="...">
+                <img src="{{ asset('assets/images/image1.avif') }}" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
