@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\OurRegisterController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SectionController;
 use App\Http\Controllers\StudentController;
@@ -12,8 +13,10 @@ Route::get('/', function () {
     return view('front-end.pages.home');
 });
 Route::get('/contact', function () {
-    return view('front-end.pages.contact');
+    return view('front-end.pages.form');
 });
+Route::post('/myalalal',[OurRegisterController::class, 'registerStore'])->name('register.store');
+// ->name('register.store');
 // Route::resource('/', StudentController::class);
 // Route::get('/register',[RegisterController::class, 'register']);
 // laravel new projectname
