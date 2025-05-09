@@ -20,12 +20,27 @@
 
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" name="username" class="form-control" id="name" placeholder="Example input placeholder">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Example input placeholder">
               </div>
               <div class="mb-3">
-                <label for="formGroupExampleInput2" class="form-label">Email</label>
-                <input type="email" name="email" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email">
               </div>
+
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">phone</label>
+                <input type="text" name="phone" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">city</label>
+                <input type="text" name="city" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              </div>
+
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Address</label>
+                <textarea class="form-control" name="address" id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
+              </div>
+
               <button type="submit"  class="btn bg-primary">Submit</button>
             </div>
           </div>
