@@ -42,4 +42,16 @@ class OurRegisterController extends Controller
 // return ('hello this is store file');
 
     }
+
+    public function registerShow()
+    {
+
+        // $register = Registration::where('email', "hilalahmadsalarzi@gmail.com")->get();
+        $register = Registration::all();
+
+        // $data = Registration::all();
+        // return response()->json($data);
+        return view('front-end.pages.registration-table', compact('register'));
+        // return view('front-end.pages.registration-table');
+    }
 }

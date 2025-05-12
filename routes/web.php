@@ -38,3 +38,5 @@ Route::get('/controll-statement',function () {
 Route::get('/loop',function () {
     return view('loop');
 });
+
+Route::get('/register-table',[OurRegisterController::class, 'registerShow']);
